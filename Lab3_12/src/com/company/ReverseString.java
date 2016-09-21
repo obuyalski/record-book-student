@@ -5,7 +5,10 @@ package com.company;
  */
 public class ReverseString {
     public static void reverseStrings(int numberRows, String[] strings) {
-        for (int j = 0; j < numberRows; j++)
-            System.out.println(new StringBuffer(strings[j]).reverse().toString());
+        int j = 0;
+        strings[j] = new StringBuffer(strings[j]).reverse().toString();
+        for ( j = 0; j < numberRows; j++) {
+            System.out.println(strings[j]);
+        }
     }
 }

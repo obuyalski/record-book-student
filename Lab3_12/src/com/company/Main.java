@@ -10,15 +10,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        String NAMEFILE = "input.txt";
+        String FILENAME = "input.txt";
         System.out.println("Enter the numbers of rows.");
         int numberRows = 0;
         try {
             numberRows = scanner.nextInt();
-            String[] arrString = new String [numberRows];
             InputFile iFile = new InputFile();
-            arrString = iFile.inputFile(numberRows, NAMEFILE);
-            reverseStrings(numberRows, arrString);
+            reverseStrings(numberRows, iFile.inputFile(numberRows, FILENAME));
         } catch (InputMismatchException e) {
             System.out.println(e);
         } catch (NullPointerException e) {
