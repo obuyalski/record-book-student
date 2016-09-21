@@ -7,12 +7,12 @@ import java.util.StringTokenizer;
  * Created by Олег on 20.09.2016.
  */
 public class InputFile {
-    String[] string;
 
-    public String[] inputFile(int numberRows) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader(new File("input.txt")));
-        String line;
-        String b;
+    public String[] inputFile(int numberRows, String fileName) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(new File(fileName)));
+        String[] string;
+        String line = "";
+        String b = "";
         int i = 0;
         StringTokenizer st;
         string = new String[numberRows];
