@@ -1,26 +1,28 @@
 package com.company.utils;
 
-import com.company.users.Teacher;
+import com.company.items.Subject;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Олег on 29.09.2016.
+ * Created by Олег on 12.10.2016.
  */
-public class TeacherHandler implements Handler {
-
-    private TeacherUtils teacherUtils = new TeacherUtils(); //можно static
+public class SubjectHandler implements Handler{
+    private SubjectUtils subjectUtils = new SubjectUtils(); //можно static
 
     @Override
     public List read(String filename) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
         String line;
-        List<Teacher> list = new ArrayList();
+        List<Subject> list = new ArrayList();
 
         while ((line = br.readLine()) != null) {
-            list.add(teacherUtils.parseTeacher(line));
+            list.add(subjectUtils.parseSubject(line));
         }
 
         return list;
