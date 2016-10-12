@@ -3,8 +3,6 @@ package com.company.items;
 import com.company.users.Student;
 import com.company.users.Teacher;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /**

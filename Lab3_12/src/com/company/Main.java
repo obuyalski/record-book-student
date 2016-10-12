@@ -1,4 +1,5 @@
 package com.company;
+// поменять порядок слов в строках на обратный
 
 import java.io.IOException;
 import java.util.Scanner;

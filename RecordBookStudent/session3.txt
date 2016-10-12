@@ -1,0 +1,3 @@
+VMA 70
+proga 70
+matan 130

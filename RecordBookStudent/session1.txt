@@ -1,0 +1,3 @@
+matan 130
+proga 120
+history 40

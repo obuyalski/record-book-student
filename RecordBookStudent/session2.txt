@@ -1,0 +1,4 @@
+matan 130
+proga 70
+GA 96
+Angl 100

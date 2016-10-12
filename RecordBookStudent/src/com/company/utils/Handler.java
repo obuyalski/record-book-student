@@ -7,10 +7,8 @@ import java.util.List;
  * Created by Олег on 29.09.2016.
  */
 public interface Handler {
-    /**
-     * Работает с файлами. Читает/пишет в файл
-     */
+
     List read(String filename) throws IOException;
 
-    void write(String filename);
+    void write(String filename, List list) throws IOException;
 }
